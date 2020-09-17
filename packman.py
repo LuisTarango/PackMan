@@ -124,54 +124,54 @@ def move():
             
             if pacman.x > point.x and pacman.y > point.y:
                 options = [
-                vector(5, 0),
-                vector(5, 0),
-                vector(5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, 5),
-                vector(0, 5),
-                vector(0, -5),
+                vector(8, 0),
+                vector(8, 0),
+                vector(8, 0),
+                vector(-8, 0),
+                vector(0, 8),
+                vector(0, 8),
+                vector(0, 8),
+                vector(0, -8),
             ]
             elif pacman.x < point.x and pacman.y > point.y:
                 options = [
-                vector(5, 0),
-                vector(-5, 0),
-                vector(-5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, 5),
-                vector(0, 5),
-                vector(0, -5),
+                vector(8, 0),
+                vector(-8, 0),
+                vector(-8, 0),
+                vector(-8, 0),
+                vector(0, 8),
+                vector(0, 8),
+                vector(0, 8),
+                vector(0, -8),
             ]
             elif pacman.x > point.x and pacman.y < point.y:
                 options = [
-                vector(5, 0),
-                vector(5, 0),
-                vector(5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, -5),
-                vector(0, -5),
-                vector(0, -5),
+                vector(8, 0),
+                vector(8, 0),
+                vector(8, 0),
+                vector(-8, 0),
+                vector(0, 8),
+                vector(0, -8),
+                vector(0, -8),
+                vector(0, -8),
             ]
             elif pacman.x < point.x and pacman.y < point.y:
                 options = [
-                vector(5, 0),
-                vector(-5, 0),
-                vector(-5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, -5),
-                vector(0, -5),
-                vector(0, -5),
+                vector(8, 0),
+                vector(-8, 0),
+                vector(-8, 0),
+                vector(-8, 0),
+                vector(0, 8),
+                vector(0, -8),
+                vector(0, -8),
+                vector(0, -8),
             ]
             else:
                 options = [
-                vector(5, 0),
-                vector(-5, 0),
-                vector(0, 5),
-                vector(0, -5),
+                vector(7, 0),
+                vector(-7, 0),
+                vector(0, 7),
+                vector(0, -7),
                 ]
 
             plan = choice(options)
