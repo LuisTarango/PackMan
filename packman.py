@@ -1,3 +1,5 @@
+#Luis Fernando Tarango Falix   A00827678
+#Hiram David Arguelles Ramirez A00826301
 from random import choice
 from turtle import *
 from freegames import floor, vector
@@ -195,7 +197,7 @@ def change(x, y):
     if valid(pacman + vector(x, y)):
         aim.x = x
         aim.y = y
-
+#Indicaciones a como se presentan las cosas en la ventana del juego 
 setup(420, 620, 370, 0)
 hideturtle()
 tracer(False)
@@ -203,6 +205,7 @@ writer.goto(160, 160)
 writer.color('white')
 writer.write(state['score'])
 listen()
+#Teclas con las que se controla a pacman 
 onkey(lambda: change(5, 0), 'Right')
 onkey(lambda: change(-5, 0), 'Left')
 onkey(lambda: change(0, 5), 'Up')
