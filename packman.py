@@ -122,7 +122,7 @@ def move():
             point.move(course)
         else:
             
-            if pacman.x > point.x and pacman.y > point.y:
+            if pacman.x > point.x and pacman.y > point.y: #En esta serie de ifs se le dan opciones a los fantasmas que prioritizan el acercarse hacia el pacmanpara hacerlo mas desafiante
                 options = [
                 vector(10, 0),
                 vector(10, 0),
@@ -167,7 +167,7 @@ def move():
                 vector(0, -10),
             ]
             else:
-                options = [
+                options = [         #Este else es en caso de que se encuentren en un punto en comun, dar oportunidad al jugador de no ser perseguido
                 vector(10, 0),
                 vector(-10, 0),
                 vector(0, 10),
